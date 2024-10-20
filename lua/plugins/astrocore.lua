@@ -65,6 +65,10 @@ return {
           -- "<cmd>JavaTestRunCurrentMethod<CR><cmd>JavaTestViewLastReport<CR>",
           desc = "Run Current Test Method",
         },
+        ["<Leader>dT"] = {
+          function() require("java").test.run_current_class() end,
+          desc = "Run Current Test Class",
+        },
         ["<Leader>dv"] = {
           function() require("java").test.view_last_report() end,
           desc = "View Last Test",
@@ -75,6 +79,9 @@ return {
 
         -- setting a mapping to false will disable it
         -- ["<C-S>"] = false,
+      },
+      x = {
+        ["<Leader>c"] = { name = "CodeSnap" },
       },
     },
   },

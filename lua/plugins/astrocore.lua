@@ -60,19 +60,6 @@ return {
           desc = "Close buffer from tabline",
         },
         --["<C-`>"] = { function() require("toggleterm").exec("", 1) end, desc = "Toggle terminal" },
-        ["<Leader>lt"] = {
-          function() require("java").test.run_current_method() end,
-          -- "<cmd>JavaTestRunCurrentMethod<CR><cmd>JavaTestViewLastReport<CR>",
-          desc = "Run Current Test Method",
-        },
-        ["<Leader>lT"] = {
-          function() require("java").test.run_current_class() end,
-          desc = "Run Current Test Class",
-        },
-        ["<Leader>lv"] = {
-          function() require("java").test.view_last_report() end,
-          desc = "View Last Test",
-        },
         -- tables with just a `desc` key will be registered with which-key if it's installed
         -- this is useful for naming menus
         -- ["<Leader>b"] = { desc = "Buffers" },

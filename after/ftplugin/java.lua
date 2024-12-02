@@ -1,0 +1,10 @@
+local map = vim.keymap.set
+map("n", "<Leader>j", "", { desc = " Java" })
+map("n", "<Leader>jt", "JavaTestRunCurrentMethod", { desc = "Run Current Test Method" })
+map("n", "<Leader>jT", "JavaTestRunCurrentClass", { desc = "Run Current Test Class" })
+map("n", "<Leader>jd", "JavaTestDebugCurrentMethod", { desc = "Debug Current Test Method" })
+map("n", "<Leader>jD", "JavaTestDebugCurrentClass", { desc = "Debug Current Test Class" })
+map("n", "<Leader>jv", "JavaTestViewLastReport", { desc = "View Last Test Report" })
+map("n", "<Leader>jm", "JavaRunnerRunMain", { desc = "Run a Main Method" })
+map("n", "<Leader>jl", "JavaRunnerToggleLogs", { desc = "Toggle Runner Logs" })
+map("n", "<Leader>jx", "JavaRunnerStopMain", { desc = "Stop Main Execution" })
